@@ -175,7 +175,7 @@ http://localhost:5273
 Navigate to Angular project:
 
 ```
-cd AngularProject
+cd ecommerce-ui
 ```
 
 Install dependencies:
