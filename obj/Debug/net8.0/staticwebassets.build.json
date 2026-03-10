@@ -1,0 +1,904 @@
+{
+  "Version": 1,
+  "Hash": "RyFylhLY+Ggt2gaAQDwTYZp8FcBnZm17X9ow3I0ohFc=",
+  "Source": "ECommerceAPI",
+  "BasePath": "_content/ECommerceAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ECommerceAPI\\wwwroot",
+      "Source": "ECommerceAPI",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\appliances.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/appliances.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zwm0yhtpon",
+      "Integrity": "A8qJ77W1xUE86CLUDn2wCsRgtFrt21EQXwa6n1lTW0g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\appliances.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\beauty.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/beauty.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xjlwckuh26",
+      "Integrity": "HbFPTx50NlBYRiMlvn4v1Kmu0cbOstjqqo1VoFpq94c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\beauty.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\electronics.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/electronics.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mu7ovf6oup",
+      "Integrity": "QkdS+wL/jcXwJzAa4jlg2YZBt9TZ7wJbMYIs8OLw1MQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\electronics.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\fashion.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/fashion.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fdrcwmbbxq",
+      "Integrity": "k71iXiYYt4RVxpPRfb6xsjaVfElb7fgSINrGYnocIYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\fashion.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\home.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qo2p94odgp",
+      "Integrity": "Ji2miutl0Iz7YKyoHp1r2AqXlA/xosL37zwpJxDccVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\home.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\mobiles.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/mobiles.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m0ftjoxigb",
+      "Integrity": "uitXzIU6kQPvwP8Ex8FUNgPDXFJqQiHHDuR6vRPl4Ss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\mobiles.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\sports.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/categories/sports.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rt21vlqs0v",
+      "Integrity": "j1eNt6iOjYoV7Xk5VvaFwVdcmbPlx/QDYFoclZHLGcE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\sports.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\dell-laptop.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/dell-laptop.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "43avoj93uq",
+      "Integrity": "MCcQ98RDAjHdjWQE0Ie4JMYGYuOhZzCCm4EpnV+7d/A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\dell-laptop.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\face-cream.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/face-cream.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b4wendhuxd",
+      "Integrity": "5QqNxBZ7Ax2MGJK9Q0hncPe9DIcr+8i5aUsiucn9y0I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\face-cream.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\fridge.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/fridge.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "13vm97teit",
+      "Integrity": "3btTRWznrYRX/xA8p6mhsepGs45jrowrrfGvkv7tGeY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\fridge.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\lipstick.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/lipstick.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kayw66vh55",
+      "Integrity": "ZLzAvutD89K5GxMbQj1UNc05lUGC0gG6vz/YukN7mpQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\lipstick.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\samsung-s21.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/samsung-s21.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kjnyedg9ig",
+      "Integrity": "sA299awIrDtg1+X1bKNJ3tbyxWJFricjTDadWXZVhZ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\samsung-s21.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\shirt.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/shirt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lftq41jp1g",
+      "Integrity": "f1AYi2sqHtKvi0n644krZODIxzLgYw5BvBQcEDwgcpg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\shirt.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\sofa.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/sofa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ux5hnl0uaj",
+      "Integrity": "rlzVyb7rE7y6V5XVH99NPWcIA/1LMR+UxodcJ6FHPhY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\sofa.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\sony-headphones.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/sony-headphones.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lo5hmeqlvw",
+      "Integrity": "BeUmbEL2Kts3pRTNl1HEbDX5QGTEbvycXC0v7QezXsk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\sony-headphones.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\study-table.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/study-table.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "91vg5p3jqo",
+      "Integrity": "HRrs6vBOTlcSB6TstpfQ7otjE1o1d0GG5aZp86AfHzI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\study-table.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\washing-machine.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/washing-machine.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hs7hgg84m4",
+      "Integrity": "sREoRj0HuSh6W8Z7iURo2H5oMkBgrdGA6SzQ3Oy8xNI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\washing-machine.png"
+    },
+    {
+      "Identity": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\women-dress.png",
+      "SourceId": "ECommerceAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI",
+      "RelativePath": "images/products/women-dress.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ph19t5ujbg",
+      "Integrity": "zYAwnKBit+RPmyS6m/l2YKXtMgE4ZF7KDgvXuHvtZWc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\women-dress.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/categories/appliances.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\appliances.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A8qJ77W1xUE86CLUDn2wCsRgtFrt21EQXwa6n1lTW0g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:41:51 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/beauty.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\beauty.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HbFPTx50NlBYRiMlvn4v1Kmu0cbOstjqqo1VoFpq94c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:40:54 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/electronics.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\electronics.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QkdS+wL/jcXwJzAa4jlg2YZBt9TZ7wJbMYIs8OLw1MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:30:09 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/fashion.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\fashion.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k71iXiYYt4RVxpPRfb6xsjaVfElb7fgSINrGYnocIYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:46:34 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/home.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\home.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ji2miutl0Iz7YKyoHp1r2AqXlA/xosL37zwpJxDccVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:47:36 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/mobiles.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\mobiles.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uitXzIU6kQPvwP8Ex8FUNgPDXFJqQiHHDuR6vRPl4Ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:48:11 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/categories/sports.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\categories\\sports.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j1eNt6iOjYoV7Xk5VvaFwVdcmbPlx/QDYFoclZHLGcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Mar 2026 04:45:30 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/dell-laptop.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\dell-laptop.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MCcQ98RDAjHdjWQE0Ie4JMYGYuOhZzCCm4EpnV+7d/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:02:09 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/face-cream.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\face-cream.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5QqNxBZ7Ax2MGJK9Q0hncPe9DIcr+8i5aUsiucn9y0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:09:32 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/fridge.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\fridge.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3btTRWznrYRX/xA8p6mhsepGs45jrowrrfGvkv7tGeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:08:58 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/lipstick.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\lipstick.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZLzAvutD89K5GxMbQj1UNc05lUGC0gG6vz/YukN7mpQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:10:19 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/samsung-s21.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\samsung-s21.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sA299awIrDtg1+X1bKNJ3tbyxWJFricjTDadWXZVhZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:03:04 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/shirt.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\shirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f1AYi2sqHtKvi0n644krZODIxzLgYw5BvBQcEDwgcpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:04:59 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/sofa.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\sofa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rlzVyb7rE7y6V5XVH99NPWcIA/1LMR+UxodcJ6FHPhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:06:35 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/sony-headphones.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\sony-headphones.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BeUmbEL2Kts3pRTNl1HEbDX5QGTEbvycXC0v7QezXsk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:04:05 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/study-table.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\study-table.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HRrs6vBOTlcSB6TstpfQ7otjE1o1d0GG5aZp86AfHzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:07:31 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/washing-machine.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\washing-machine.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6256"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sREoRj0HuSh6W8Z7iURo2H5oMkBgrdGA6SzQ3Oy8xNI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:08:15 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/products/women-dress.png",
+      "AssetFile": "C:\\Users\\SravyaThummala\\Desktop\\ECommerceBackend\\EcommerceAPI\\wwwroot\\images\\products\\women-dress.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zYAwnKBit+RPmyS6m/l2YKXtMgE4ZF7KDgvXuHvtZWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Dec 2025 11:05:54 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    }
+  ]
+}
