@@ -214,21 +214,7 @@ Entity Framework Core is used for:
 
 ---
 
-# 📸 Screenshots
 
-You can add screenshots here later.
-
-Example:
-
-```
-Home Page
-Product Listing
-Cart Page
-Order History
-Admin Dashboard
-```
-
----
 
 # 🎯 Learning Objectives
 
