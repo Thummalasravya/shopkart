@@ -1,0 +1,8 @@
+<div class="category-bar">
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+  >
+    {{ category }}
+  </button>
+</div>

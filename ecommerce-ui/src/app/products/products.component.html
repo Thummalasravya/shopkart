@@ -1,0 +1,29 @@
+<!-- Loading State -->
+<div *ngIf="loading" style="text-align:center; margin-top:40px;">
+  <h3>Loading products...</h3>
+</div>
+
+<!-- Products Grid -->
+<div *ngIf="!loading" class="products">
+
+  <div class="product-card" *ngFor="let product of products">
+
+    <!-- Product Image -->
+    <img
+      [src]="product.imageUrl || 'https://via.placeholder.com/200'"
+      alt="{{ product.name }}"
+      class="product-image"
+    />
+
+    <!-- Product Details -->
+    <h3 class="product-name">{{ product.name }}</h3>
+    <p class="product-price">₹{{ product.price }}</p>
+
+    <!-- Add to Cart Button -->
+    <button class="add-btn" (click)="addToCart(product)">
+      Add to Cart
+    </button>
+
+  </div>
+
+</div>

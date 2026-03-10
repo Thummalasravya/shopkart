@@ -1,0 +1,55 @@
+<div class="login-container">
+  <div class="login-card">
+
+    <h2>Create Account</h2>
+
+    <input
+      type="text"
+      placeholder="Full Name"
+      [(ngModel)]="name"
+    />
+
+    <input
+      type="email"
+      placeholder="Email"
+      [(ngModel)]="email"
+    />
+
+    <!-- PASSWORD -->
+    <div class="password-box">
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="Password"
+        [(ngModel)]="password"
+      />
+      <span class="eye" (click)="togglePassword()">
+        {{ showPassword ? '🙈' : '👁️' }}
+      </span>
+    </div>
+
+    <!-- CONFIRM PASSWORD -->
+    <div class="password-box">
+      <input
+        [type]="showConfirmPassword ? 'text' : 'password'"
+        placeholder="Confirm Password"
+        [(ngModel)]="confirmPassword"
+      />
+      <span class="eye" (click)="toggleConfirmPassword()">
+        {{ showConfirmPassword ? '🙈' : '👁️' }}
+      </span>
+    </div>
+
+    <!-- ERROR MESSAGE -->
+    <p *ngIf="error" class="error-text">
+      {{ error }}
+    </p>
+
+    <button (click)="register()">Register</button>
+
+    <p class="register-text">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+
+  </div>
+</div>

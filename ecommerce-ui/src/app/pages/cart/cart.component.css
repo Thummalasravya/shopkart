@@ -1,0 +1,98 @@
+h2 {
+  margin: 20px 0;
+}
+
+/* ===== CART CONTAINER ===== */
+
+:host {
+  display: block;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== CART ITEM CARD ===== */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition: 0.2s;
+}
+
+.cart-item:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item strong {
+  flex: 1;
+  font-size: 16px;
+}
+
+.cart-item button {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  background: #2874f0;
+  color: white;
+  transition: 0.2s;
+}
+
+.cart-item button:hover {
+  transform: scale(1.08);
+}
+
+.cart-item button:last-child {
+  background: #ff4d4d;
+}
+
+/* ===== FOOTER ===== */
+
+.cart-footer {
+  margin-top: 25px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ===== CHECKOUT BUTTON ===== */
+
+.checkout-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff9f00, #ffb300);
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

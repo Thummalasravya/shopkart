@@ -1,0 +1,29 @@
+<div class="navbar">
+
+  <div class="left">
+    <a routerLink="/" class="logo">ShopKart</a>
+  </div>
+
+  <div class="right">
+
+    <a routerLink="/">Home</a>
+
+    <!-- Show Login if NOT logged in -->
+    <a *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</a>
+
+    <!-- Show Email + Logout if logged in -->
+    <span *ngIf="auth.isLoggedIn()" class="user">
+      {{ auth.getUserEmail() }}
+      <button (click)="logout()">Logout</button>
+    </span>
+
+    <a routerLink="/wishlist">Wishlist</a>
+    <a routerLink="/cart">
+     Cart ({{ cartCount$ | async }})
+    </a>
+
+    <a routerLink="/orders-history">My Orders</a>
+
+  </div>
+
+</div>

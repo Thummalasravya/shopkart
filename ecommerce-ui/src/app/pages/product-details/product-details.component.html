@@ -1,0 +1,44 @@
+<div *ngIf="loading">Loading product...</div>
+
+<div class="details-container" *ngIf="product">
+
+  <!-- IMAGE -->
+  <div class="image-box">
+    <img [src]="product.imageUrl" [alt]="product.name">
+  </div>
+
+  <!-- DETAILS -->
+  <div class="info-box">
+    <h2>{{ product.name }}</h2>
+
+    <div class="stars">
+      <span *ngFor="let star of [1,2,3,4,5]"
+            [class.filled]="star <= (product.rating ?? 0)">
+        ★
+      </span>
+      <span class="rating-text">({{ product.rating }})</span>
+    </div>
+
+    <h3 class="price">₹{{ product.price }}</h3>
+
+    <p class="description">
+      {{ product.description }}
+    </p>
+
+    <!-- ⭐ Quantity Controls -->
+    <div class="qty-box" *ngIf="quantity > 0; else addBtn">
+      <button (click)="decrease()">−</button>
+      <span>{{ quantity }}</span>
+      <button (click)="increase()">+</button>
+    </div>
+
+    <!-- Add to cart button -->
+    <ng-template #addBtn>
+      <button class="cart-btn" (click)="addToCart()">Add to Cart</button>
+    </ng-template>
+
+    <button class="buy-btn" (click)="buyNow()">Buy Now</button>
+
+  </div>
+
+</div>

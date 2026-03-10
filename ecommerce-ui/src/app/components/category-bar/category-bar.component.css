@@ -1,0 +1,21 @@
+.category-bar {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category-bar button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #f1f3f6;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.category-bar button:hover {
+  background-color: #2874f0;
+  color: #ffffff;
+}

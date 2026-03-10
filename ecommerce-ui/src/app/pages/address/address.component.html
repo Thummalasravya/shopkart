@@ -1,0 +1,59 @@
+<h2 class="title">Saved Addresses</h2>
+
+<button class="add-btn" (click)="toggleForm()">
+  + Add New Address
+</button>
+
+<!-- 🔥 addresses ALWAYS visible -->
+<div class="address-grid">
+
+  <div *ngFor="let a of addresses" class="card">
+
+    <div class="card-header">
+      <h3>{{ a.addressTitle }}</h3>
+      <span *ngIf="a.isDefault" class="badge">Default</span>
+    </div>
+
+    <p>{{ a.fullName }}</p>
+    <p>{{ a.phone }}</p>
+    <p>{{ a.addressLine }}</p>
+    <p>{{ a.city }} - {{ a.pincode }}</p>
+
+    <div class="actions">
+      <button (click)="setDefault(a.id!)">Set Default</button>
+      <button (click)="editAddress(a)">Edit</button>
+      <button class="danger" (click)="deleteAddress(a.id!)">Delete</button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- 🔥 FORM ONLY -->
+<div *ngIf="showForm">
+
+  <h2 class="title">
+    {{ editingId ? 'Edit Address' : 'Add New Address' }}
+  </h2>
+
+  <form (ngSubmit)="saveAddress()">
+
+    <input [(ngModel)]="newAddress.addressTitle" name="title" placeholder="Title" required>
+    <input [(ngModel)]="newAddress.fullName" name="name" placeholder="Full Name" required>
+    <input [(ngModel)]="newAddress.phone" name="phone" placeholder="Phone" required>
+    <input [(ngModel)]="newAddress.addressLine" name="line" placeholder="Address Line" required>
+    <input [(ngModel)]="newAddress.city" name="city" placeholder="City" required>
+    <input [(ngModel)]="newAddress.pincode" name="pin" placeholder="Pincode" required>
+
+    <label>
+      <input type="checkbox" [(ngModel)]="newAddress.isDefault" name="default">
+      Set as default
+    </label>
+
+    <button type="submit">
+      {{ editingId ? 'Update Address' : 'Save Address' }}
+    </button>
+
+  </form>
+
+</div>

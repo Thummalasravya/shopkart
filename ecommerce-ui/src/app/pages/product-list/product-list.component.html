@@ -1,0 +1,65 @@
+<!-- ===== CATEGORY BAR ===== -->
+<div class="category-bar">
+  <button
+    *ngFor="let c of categories"
+    [class.active]="selectedCategory === c"
+    (click)="filterByCategory(c)">
+    {{ c }}
+  </button>
+</div>
+
+<!-- ===== PRODUCT GRID ===== -->
+<div class="product-grid">
+
+  <div class="product-card" *ngFor="let p of products">
+
+    <!-- ❤️ Wishlist -->
+    <div class="wishlist" (click)="toggleWishlist(p, $event)">
+      <span *ngIf="isWishlisted$(p.productId) | async">❤️</span>
+      <span *ngIf="!(isWishlisted$(p.productId) | async)">🤍</span>
+    </div>
+
+    <img [src]="p.imageUrl" [alt]="p.name">
+
+    <h4>{{ p.name }}</h4>
+
+    <!-- ⭐ STAR RATING -->
+    <div class="stars">
+      <span
+        *ngFor="let star of [1,2,3,4,5]"
+        [class.filled]="star <= (p.rating ?? 0)">
+        ★
+      </span>
+    </div>
+
+    <p class="price">₹{{ p.price }}</p>
+
+    <div class="actions">
+
+      <!-- ✅ Add to Cart OR Quantity Controls -->
+      <ng-container *ngIf="!quantities[p.productId]; else qtyControls">
+        <button class="cart" (click)="addToCart(p)">
+          Add to Cart
+        </button>
+      </ng-container>
+
+      <!-- Quantity Controls -->
+      <ng-template #qtyControls>
+        <div class="qty-box">
+          <button (click)="decrease(p)">−</button>
+          <span>{{ quantities[p.productId] }}</span>
+          <button (click)="increase(p)">+</button>
+        </div>
+      </ng-template>
+
+      <!-- View -->
+      <a class="view" [routerLink]="['/product', p.slug]">View</a>
+
+      <!-- Buy Now -->
+      <button class="buy" (click)="buyNow(p)">Buy Now</button>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="profile-container">
+  <div class="profile-card">
+
+    <!-- AVATAR ROW -->
+    <div class="avatar-row">
+
+      <label for="photoUpload" class="avatar">
+
+        <!-- PHOTO -->
+        <img
+          *ngIf="auth.profilePhoto$ | async as photo"
+          [src]="photo"
+        />
+
+        <!-- INITIAL -->
+        <span *ngIf="!(auth.profilePhoto$ | async)">
+          {{ getInitial() }}
+        </span>
+
+        <div class="camera">📷</div>
+      </label>
+
+      <!-- DELETE ICON -->
+      <span
+        *ngIf="auth.profilePhoto$ | async"
+        class="delete-icon"
+        (click)="removePhoto()">
+        🗑️
+      </span>
+
+      <input
+        id="photoUpload"
+        type="file"
+        accept="image/*"
+        hidden
+        (change)="onPhotoSelected($event)"
+      />
+    </div>
+
+    <!-- NAME -->
+    <div *ngIf="!editMode" class="name-row">
+      <h2>{{ userName }}</h2>
+      <span class="edit-icon" (click)="enableEdit()">✏️</span>
+    </div>
+
+    <!-- EDIT MODE -->
+    <div *ngIf="editMode" class="edit-box">
+      <input type="text" [(ngModel)]="tempName" />
+      <div class="edit-actions">
+        <button class="save-btn" (click)="saveName()">Save</button>
+        <button class="cancel-btn" (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="info">
+      <label>Email</label>
+      <p>{{ email }}</p>
+    </div>
+
+    <button class="logout-btn" (click)="logout()">Logout</button>
+
+  </div>
+</div>

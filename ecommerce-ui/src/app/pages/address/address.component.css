@@ -1,0 +1,118 @@
+.title {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* grid layout */
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+/* address card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: #fafafa;
+  transition: 0.2s;
+
+  /* 🔥 important fix */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* text inside card */
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+
+  /* 🔥 wrap long text */
+  word-break: break-word;
+}
+
+/* header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: #ff9900;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* buttons */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.danger {
+  background: #dc3545;
+}
+
+/* form */
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* checkbox */
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* save button */
+button[type="submit"] {
+  background: #28a745;
+  font-weight: bold;
+}
+.add-btn {
+  background: #28a745;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+

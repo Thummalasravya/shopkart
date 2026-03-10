@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #2874f0;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search {
+  width: 40%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* USER INFO */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* PROFILE ICON */
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-circle {
+  width: 32px;
+  height: 32px;
+  background: white;
+  color: #2874f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* TOOLTIP */
+.profile-tooltip {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: none;
+  z-index: 100;
+}
+
+/* SHOW TOOLTIP */
+.profile-wrapper:hover .profile-tooltip {
+  display: block;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-circle {
+  width: 32px;
+  height: 32px;
+  background: white;
+  color: #2874f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.profile-wrapper {
+  position: relative;
+  cursor: pointer;
+}

@@ -1,0 +1,140 @@
+:host {
+  display: block;
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+button {
+  background: #ff9900;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ORDER CARD */
+
+.order-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.order-card h4 {
+  margin: 0 0 6px 0;
+}
+
+.order-card p {
+  margin: 3px 0;
+}
+
+/* STATUS BADGE */
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: white;
+}
+
+.status-badge.placed { background: #2196f3; }
+.status-badge.processing { background: #ff9800; }
+.status-badge.shipped { background: #9c27b0; }
+.status-badge.delivered { background: #4caf50; }
+
+/* TIMELINE */
+
+.timeline {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.step {
+  text-align: center;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: auto;
+}
+
+.step.active .circle {
+  background: #4caf50;
+}
+
+.step p {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.line {
+  height: 3px;
+  width: 60px;
+  background: #ccc;
+}
+
+.step.active + .line {
+  background: #4caf50;
+}
+
+/* ITEMS */
+
+.item-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* DELETE ICON */
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.delete-icon:hover {
+  color: #c62828;
+}

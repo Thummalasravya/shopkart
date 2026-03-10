@@ -1,0 +1,74 @@
+<nav class="navbar">
+
+  <!-- LOGO -->
+  <div class="logo" routerLink="/">
+    🛒 ShopKart
+  </div>
+
+  <!-- SEARCH -->
+  <input
+    type="text"
+    class="search"
+    placeholder="Search products..."
+    [(ngModel)]="searchText"
+    (input)="onSearchChange()"
+  />
+
+  <!-- NAV LINKS -->
+  <div class="nav-links">
+
+    <a routerLink="/">Home</a>
+
+    <!-- LOGIN (WHEN LOGGED OUT) -->
+    <a *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</a>
+
+    <!-- PROFILE (WHEN LOGGED IN) -->
+    <div *ngIf="auth.isLoggedIn()" class="user-info">
+
+      <!-- PROFILE ICON -->
+      <div class="profile-wrapper" routerLink="/profile">
+
+        <!-- PROFILE PHOTO (AUTO-UPDATES) -->
+        <img
+          *ngIf="auth.profilePhoto$ | async as photo"
+          [src]="photo"
+          class="nav-avatar"
+        />
+
+        <!-- FALLBACK INITIAL -->
+        <div
+          *ngIf="!(auth.profilePhoto$ | async)"
+          class="profile-circle">
+        {{ userInitial$ | async }}
+
+        </div>
+
+        <!-- TOOLTIP (FULL EMAIL) -->
+        <div class="profile-tooltip">
+          {{ auth.getUserEmail() }}
+        </div>
+
+      </div>
+
+      <!-- LOGOUT -->
+      <button class="logout-btn" (click)="logout()">Logout</button>
+
+    </div>
+
+    <!-- WISHLIST -->
+   <a routerLink="/wishlist">
+  ❤️ Wishlist ({{ wishlistCount$ | async }})
+</a>
+
+
+    <!-- CART -->
+    <a routerLink="/cart">
+      🛒 Cart ({{ cartCount$ | async }})
+    </a>
+
+    <!-- ORDERS -->
+    <a routerLink="/order-history">My Orders</a>
+
+  </div>
+
+</nav>

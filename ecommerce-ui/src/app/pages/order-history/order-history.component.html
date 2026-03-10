@@ -1,0 +1,87 @@
+<h2>My Orders</h2>
+
+<button (click)="clearHistory()">Clear Order History</button>
+
+<div *ngIf="loading">
+  Loading orders...
+</div>
+
+<div *ngIf="!loading && orders.length === 0">
+  No orders found
+</div>
+
+<div *ngFor="let order of orders" class="order-card">
+
+  <h4>
+    Order #{{order.orderId}}
+
+    <span class="delete-icon"
+          (click)="deleteOrder(order.orderId)"
+          title="Delete order">
+      🗑
+    </span>
+  </h4>
+
+  <p>Total: ₹{{order.totalAmount}}</p>
+  <p>Date: {{order.createdAt | date:'medium'}}</p>
+
+  <div class="status-badge" [ngClass]="order.status?.toLowerCase()">
+    {{ order.status }}
+  </div>
+
+  <!-- Timeline -->
+
+  <div class="timeline">
+
+    <div class="step" [class.active]="order.status==='Placed' || order.status==='Processing' || order.status==='Shipped' || order.status==='Delivered'">
+      <div class="circle"></div>
+      <p>Placed</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step" [class.active]="order.status==='Processing' || order.status==='Shipped' || order.status==='Delivered'">
+      <div class="circle"></div>
+      <p>Processing</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step" [class.active]="order.status==='Shipped' || order.status==='Delivered'">
+      <div class="circle"></div>
+      <p>Shipped</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step" [class.active]="order.status==='Delivered'">
+      <div class="circle"></div>
+      <p>Delivered</p>
+    </div>
+
+  </div>
+
+  <!-- Order Items -->
+
+  <div *ngFor="let item of order.items" class="item-row">
+
+    <img
+      [src]="item.image"
+      alt="product"
+      class="product-img"
+    />
+
+    <div class="item-info">
+
+      <p class="name">{{item.productName}}</p>
+      <p>Qty: {{item.quantity}}</p>
+
+      <button (click)="buyAgain(item.productId)">
+        Buy Again
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

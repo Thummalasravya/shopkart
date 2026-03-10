@@ -1,0 +1,87 @@
+<div class="login-container">
+
+  <div class="login-card">
+
+    <h2>Login to ShopKart</h2>
+
+    <form #f="ngForm" (ngSubmit)="login(f)">
+
+      <!-- EMAIL -->
+
+      <input
+        name="email"
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="email"
+        required
+        email
+        #emailRef="ngModel"
+      />
+
+      <p *ngIf="emailRef.invalid && emailRef.touched" class="error-text">
+        Valid email required
+      </p>
+
+
+      <!-- PASSWORD -->
+
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        required
+        minlength="6"
+        pattern="^(?=.*[A-Za-z])(?=.*\d).{6,}$"
+        #passRef="ngModel"
+      />
+
+      <p *ngIf="passRef.invalid && passRef.touched" class="error-text">
+        Password must contain letters + numbers (min 6 chars)
+      </p>
+
+
+      <!-- ERROR -->
+
+      <p *ngIf="error" class="error-text">
+        {{ error }}
+      </p>
+
+
+      <!-- LOGIN BUTTON -->
+
+      <button type="submit" [disabled]="loading">
+        {{ loading ? 'Logging in...' : 'Login' }}
+      </button>
+
+    </form>
+
+
+    <!-- SOCIAL LOGIN -->
+
+    <div class="social-login">
+
+      <p class="divider">or</p>
+
+      <div id="googleButton"></div>
+
+    </div>
+
+
+    <!-- REGISTER -->
+
+    <p class="register-text">
+      New user?
+      <a routerLink="/register">Create account</a>
+    </p>
+
+
+    <!-- FORGOT PASSWORD -->
+
+    <p class="register-text">
+      <a routerLink="/forgot-password">Forgot Password?</a>
+    </p>
+
+  </div>
+
+</div>

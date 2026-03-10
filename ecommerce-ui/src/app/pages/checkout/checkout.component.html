@@ -1,0 +1,137 @@
+<div class="checkout-container">
+
+<h2>1. Delivery Address</h2>
+
+<button class="add-btn" (click)="showAddressForm = !showAddressForm">
++ Add New Address
+</button>
+
+<div *ngFor="let addr of addresses" class="address-card">
+
+<label class="address-option">
+
+<input type="radio"
+name="address"
+[value]="addr.id"
+[(ngModel)]="selectedAddressId">
+
+<div class="address-info">
+
+<div class="title-row">
+<strong>{{ addr.addressTitle }}</strong>
+<span *ngIf="addr.isDefault" class="default">Default</span>
+</div>
+
+<p>{{ addr.fullName }}</p>
+<p>{{ addr.phone }}</p>
+<p>{{ addr.addressLine }}</p>
+<p>{{ addr.city }} - {{ addr.pincode }}</p>
+
+<div class="address-actions">
+<button (click)="setDefault(addr.id)">Default</button>
+<button (click)="editAddress(addr)">Edit</button>
+<button (click)="deleteAddress(addr.id)">Delete</button>
+</div>
+
+</div>
+
+</label>
+
+</div>
+
+<div *ngIf="showAddressForm" class="form">
+
+<input placeholder="Title" [(ngModel)]="newAddress.addressTitle">
+<input placeholder="Full Name" [(ngModel)]="newAddress.fullName">
+<input placeholder="Phone" [(ngModel)]="newAddress.phone">
+<input placeholder="Address" [(ngModel)]="newAddress.addressLine">
+
+<input placeholder="City" [(ngModel)]="newAddress.city">
+
+<input placeholder="Pincode"
+[(ngModel)]="newAddress.pincode"
+(blur)="lookupPincode()">
+
+<div *ngIf="addressError" class="error">
+{{ addressError }}
+</div>
+
+<button class="save-btn" (click)="saveAddress()">
+Save Address
+</button>
+
+</div>
+
+<h2>2. Payment Method</h2>
+
+<div class="payment">
+
+<label>
+<input type="radio" [(ngModel)]="paymentMethod" (change)="onPaymentChange()" value="COD">
+Cash on Delivery
+</label>
+
+<label>
+<input type="radio" [(ngModel)]="paymentMethod" (change)="onPaymentChange()" value="CARD">
+Credit / Debit Card
+</label>
+
+<label>
+<input type="radio" [(ngModel)]="paymentMethod" (change)="onPaymentChange()" value="UPI">
+UPI
+</label>
+
+<label>
+<input type="radio" [(ngModel)]="paymentMethod" (change)="onPaymentChange()" value="PAYPAL">
+Pay with PayPal
+</label>
+
+</div>
+
+<!-- CARD -->
+
+<div *ngIf="paymentMethod === 'CARD'" class="card-form">
+
+<input placeholder="Card Number">
+<input placeholder="Card Holder Name">
+
+<div class="card-row">
+<input placeholder="MM/YY">
+<input placeholder="CVV">
+</div>
+
+</div>
+
+<!-- UPI -->
+
+<div *ngIf="paymentMethod === 'UPI'" class="upi-form">
+<input placeholder="Enter UPI ID (example@upi)">
+</div>
+
+<!-- PAYPAL -->
+
+<div *ngIf="paymentMethod === 'PAYPAL'" class="paypal-box">
+<div id="paypal-button-container"></div>
+</div>
+
+<div class="summary">
+
+<h3>Order Summary</h3>
+
+<div *ngFor="let item of checkoutItems">
+{{ item.name }} × {{ item.quantity }}
+</div>
+
+<hr>
+
+<h4>Total: ₹{{ total }}</h4>
+
+<button *ngIf="paymentMethod !== 'PAYPAL'"
+class="place-btn"
+(click)="placeOrder()">
+Place Order
+</button>
+
+</div>
+
+</div>

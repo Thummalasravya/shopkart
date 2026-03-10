@@ -1,0 +1,156 @@
+/* PAGE LAYOUT */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* CARD */
+.profile-card {
+  width: 360px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+/* AVATAR + DELETE ROW */
+.avatar-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #2874f0;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CAMERA ICON (UPLOAD) */
+.camera {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 14px;
+}
+
+/* DELETE (DUSTBIN) ICON */
+.delete-icon {
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.delete-icon:hover {
+  transform: scale(1.15);
+}
+
+/* NAME + EDIT ICON */
+.name-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.name-row h2 {
+  margin: 0;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.edit-icon:hover {
+  transform: scale(1.1);
+}
+
+/* EDIT MODE */
+.edit-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  flex: 1;
+  background: #28a745;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  flex: 1;
+  background: #aaa;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* EMAIL INFO */
+.info {
+  margin: 20px 0;
+}
+
+.info label {
+  font-size: 14px;
+  color: gray;
+}
+
+.info p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,287 @@
+/* GLOBAL FIX (prevents input overflow) */
+
+*{
+  box-sizing:border-box;
+}
+
+/* PAGE BACKGROUND */
+
+body{
+  background:#f5f6f8;
+}
+
+/* MAIN CONTAINER */
+
+.checkout-container{
+  max-width:900px;
+  margin:auto;
+  padding:30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* SECTION TITLES */
+
+h2{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+/* ADD ADDRESS BUTTON */
+
+.add-btn{
+  background:#16a34a;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-bottom:15px;
+  font-weight:500;
+}
+
+.add-btn:hover{
+  background:#15803d;
+}
+
+/* ADDRESS CARD */
+
+.address-card{
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:12px;
+  background:white;
+  transition:0.2s;
+}
+
+.address-card:hover{
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* ADDRESS OPTION */
+
+.address-option{
+  display:flex;
+  gap:12px;
+}
+
+.address-info p{
+  margin:3px 0;
+  font-size:14px;
+}
+
+/* TITLE ROW */
+
+.title-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:5px;
+}
+
+/* DEFAULT BADGE */
+
+.default{
+  background:#f59e0b;
+  color:white;
+  padding:3px 8px;
+  font-size:11px;
+  border-radius:4px;
+}
+
+/* ADDRESS ACTION BUTTONS */
+
+.address-actions{
+  margin-top:8px;
+}
+
+.address-actions button{
+  padding:4px 8px;
+  margin-right:6px;
+  border-radius:4px;
+  border:1px solid #d1d5db;
+  background:white;
+  cursor:pointer;
+}
+
+.address-actions button:hover{
+  background:#f3f4f6;
+}
+
+/* ADDRESS FORM */
+
+.form{
+  margin-top:10px;
+  background:white;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:15px;
+}
+
+.form input{
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+  margin-bottom:10px;
+}
+
+.form input:focus{
+  outline:none;
+  border-color:#2563eb;
+}
+
+/* SAVE BUTTON */
+
+.save-btn{
+  background:#2563eb;
+  color:white;
+  padding:11px;
+  border:none;
+  border-radius:6px;
+  width:100%;
+  cursor:pointer;
+}
+
+.save-btn:hover{
+  background:#1d4ed8;
+}
+
+/* PAYMENT METHODS */
+
+.payment{
+  margin-top:15px;
+  background:white;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:15px;
+}
+
+.payment label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+/* CREDIT CARD FORM */
+
+.card-form{
+  margin-top:12px;
+  background:white;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:18px;
+  max-width:420px;
+  width:100%;
+}
+
+.card-form input{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+/* EXPIRY + CVV ROW */
+
+.card-row{
+  display:flex;
+  gap:10px;
+}
+
+.card-row input{
+  flex:1;
+}
+
+/* UPI FORM */
+
+.upi-form{
+  margin-top:12px;
+  background:white;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:18px;
+  max-width:420px;
+  width:100%;
+}
+
+.upi-form input{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+}
+
+/* PAYPAL BOX */
+
+.paypal-box{
+  margin-top:12px;
+  max-width:420px;
+}
+
+/* ORDER SUMMARY */
+
+.summary{
+  margin-top:25px;
+  background:white;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:20px;
+}
+
+.summary h3{
+  margin-bottom:12px;
+}
+
+.summary div{
+  margin-bottom:6px;
+}
+
+.summary hr{
+  margin:12px 0;
+}
+
+/* TOTAL */
+
+.summary h4{
+  margin-bottom:14px;
+}
+
+/* PLACE ORDER BUTTON */
+
+.place-btn{
+  background:black;
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:6px;
+  width:100%;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.place-btn:hover{
+  background:#1f2937;
+}
+
+/* INPUT FOCUS EFFECT */
+
+input:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* ERROR MESSAGE */
+
+.error{
+  color:red;
+  font-size:13px;
+  margin-bottom:6px;
+}
